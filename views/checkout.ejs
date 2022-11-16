@@ -1,0 +1,296 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <style>
+      @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>A2ZWholesale</title>
+  </head>
+  <body>
+    <!-- Header Start-->
+    <header class="bg-amit py-4 shadow-sm">
+      <div class="container flex items-center justify-center">
+        <!--logo-->
+        <a href="/home">
+          <img src="/images/asollogo.png" class="ml-6 mr-36 w-20" />
+        </a>
+
+      <!--searchbar-->
+      <form method="get" action="/search">
+        <div class="relative mr-16 flex w-full max-w-xl">
+          <span class="absolute left-2 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full rounded-l-md border border-r-0 border-black py-3 pl-12 pr-3 focus:outline-none"
+            placeholder="Search" name="name"
+          />
+          <button class="rounded-r-md border-black bg-black px-8 text-white">
+            Search
+          </button>
+        </div>
+        </form>
+
+        <!--icons-->
+
+        <div class="ml-16 mr-16 flex items-center space-x-8">
+          <a href="/cart" class="relative text-center text-gray-700">
+            <div class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-[15px] leading-3">Cart</div>
+          </a>
+          <a href="/dashboard" class="relative text-center text-gray-700">
+            <div class="text-2xl">
+              <i class="fa-solid fa-user-large"></i>
+            </div>
+            <div class="text-[15px] leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- navbar start-->
+
+    <nav class="bg-gray-800">
+      <div class="container flex ml-6">
+        <div
+          class="px-8 py-4 bg-red-500 flex item-center cursor-pointer relative group"
+        >
+          <span class="text-white">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="capitalize ml-2 text-white">All Categories</span>
+
+          <div
+            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-red-500 divide-dashed hidden group-hover:block"
+          >
+            <a
+              href="/electronics"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">ELECTRONICS</span>
+            </a>
+            <a
+              href="/clothing"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">CLOTHING</span>
+            </a>
+            <a
+              href="/cosmetics"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">COSMETICS</span>
+            </a>
+            <a
+              href="/geroceries"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">GEROCERIES</span>
+            </a>
+            <a
+              href="/sports_item"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold"
+                >SPORTS ITEMS</span
+              >
+            </a>
+            <a
+              href="/kitchen"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">KITCHEN</span>
+            </a>
+            <a
+              href="/tools"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">TOOLS</span>
+            </a>
+            <a
+              href="/baby_items"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">BABY ITEMS</span>
+            </a>
+            <a
+              href="/jewelery"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">JEWELERY</span>
+            </a>
+          </div>
+        </div>
+
+        <!--link start-->
+        <div class="flex flex-grow items-center justify-between pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a href="/home" class="text-white transition hover:text-white"
+              >Home</a
+            >
+            <a href="/shop" class="text-white transition hover:text-white"
+              >Shop</a
+            >
+            <a
+              href="/order_tracking"
+              class="text-white transition hover:text-white"
+              >Order Tracking</a
+            >
+            <a href="/refund" class="text-white transition hover:text-white"
+              >Exchange/Refund</a
+            >
+            <a href="/information" class="text-white transition hover:text-white"
+              >Information</a
+            >
+          </div>
+          <a href="/login" class="mr-16 text-white">Login/Register</a>
+        </div>
+
+
+        <!--link end-->
+      </div>
+    </nav>
+    <!-- navbar end-->
+    <div class="w-full mx-auto rounded-lg p-5 text-gray-700">
+      <div class="mb-10">
+        <h1 class="text-center font-bold text-2xl uppercase">Checkout Info</h1>
+      </div>
+
+      <div class="mb-5">
+        <h1 class="text-center font-bold text-xl uppercase">
+          Total Amount:<%= total %>
+        </h1>
+      </div>
+
+      <form method="post" action="/place_order">
+        <div class="mb-3">
+          <label
+            class="flex items-center justify-center font-bold text-sm mb-2 ml-1"
+            >Name</label
+          >
+          <div class="flex items-center justify-center">
+            <input
+              class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors"
+              placeholder="Your Name"
+              type="text"
+              name="name"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label
+            class="flex items-center justify-center font-bold text-sm mb-2 ml-1"
+            >Email</label
+          >
+          <div class="flex items-center justify-center">
+            <input
+              class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors"
+              placeholder="Input Email"
+              type="text"
+              name="email"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label
+            class="flex items-center justify-center font-bold text-sm mb-2 ml-1"
+            >Phone</label
+          >
+          <div class="flex items-center justify-center">
+            <input
+              class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors"
+              placeholder="0000 0000 0000 0000"
+              type="text"
+              name="phone"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label
+            class="flex items-center justify-center font-bold text-sm mb-2 ml-1"
+            >City</label
+          >
+          <div class="flex items-center justify-center">
+            <input
+              class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors"
+              placeholder="Input City"
+              type="text"
+              name="city"
+            />
+          </div>
+        </div>
+
+        <div class="mb-10">
+          <label
+            class="font-bold text-sm mb-2 ml-1 flex items-center justify-center"
+            >Address</label
+          >
+          <div class="flex items-center justify-center">
+            <input
+              class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors"
+              placeholder="Input Address"
+              type="text"
+              name="address"
+            />
+          </div>
+        </div>
+
+        <div>
+          <form method="post" action="/payment">
+            <input
+              type="submit"
+              value="Place Order"
+              class="block w-full max-w-xs mx-auto bg-gray-500 hover:bg-gray-700 focus:bg-gray-700 text-white rounded-lg px-3 py-3 font-semibold"
+            />
+          </form>
+        </div>
+      </form>
+    </div>
+    <!--copyright-->
+    <div class="bg-gray-800 py-4 flex">
+      <div class="container flex text-center justify-between">
+        <p class="text-white text-center ml-6">
+          A2ZWholesale - All Rights reserved
+        </p>
+      </div>
+
+      <!--social media-->
+      <div class="flex space-x-6 mr-16">
+        <a href="#" class="text-white">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

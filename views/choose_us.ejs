@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UV-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>A2Z</title>
+  </head>
+
+  <body>
+   <!-- Header Start-->
+   <header class="bg-amit py-4 shadow-sm">
+    <div class="container flex items-center justify-center">
+      <!--logo-->
+      <a href="/home">
+        <img src="/images/asollogo.png" class="ml-6 mr-36 w-20" />
+      </a>
+
+    <!--searchbar-->
+    <form method="get" action="/search">
+      <div class="relative mr-16 flex w-full max-w-xl">
+        <span class="absolute left-2 top-3 text-lg text-gray-400">
+          <i class="fas fa-search"></i>
+        </span>
+        <input
+          type="text"
+          class="w-full rounded-l-md border border-r-0 border-black py-3 pl-12 pr-3 focus:outline-none"
+          placeholder="Search" name="name"
+        />
+        <button class="rounded-r-md border-black bg-black px-8 text-white">
+          Search
+        </button>
+      </div>
+      </form>
+
+      <!--icons-->
+
+      <div class="ml-16 mr-16 flex items-center space-x-8">
+        <a href="/cart" class="relative text-center text-gray-700">
+          <div class="text-2xl">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="text-[15px] leading-3">Cart</div>
+        </a>
+        <a href="/dashboard" class="relative text-center text-gray-700">
+          <div class="text-2xl">
+            <i class="fa-solid fa-user-large"></i>
+          </div>
+          <div class="text-[15px] leading-3">Account</div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- navbar start-->
+
+  <nav class="bg-gray-800">
+    <div class="container ml-6 flex">
+      <div
+        class="item-center group relative flex cursor-pointer bg-red-500 px-8 py-4"
+      >
+        <span class="text-white">
+          <i class="fas fa-bars"></i>
+        </span>
+        <span class="ml-2 capitalize text-white">All Categories</span>
+
+        <div
+          class="absolute left-0 top-full hidden w-full divide-y divide-dashed divide-red-500 bg-white py-3 shadow-md group-hover:block"
+        >
+          <a
+            href="/electronics"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black">ELECTRONICS</span>
+          </a>
+          <a
+            href="/clothing"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black">CLOTHING</span>
+          </a>
+
+          <a
+            href="/cosmetics"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black">COSMETICS</span>
+          </a>
+          <a
+            href="/geroceries"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black">GEROCERIES</span>
+          </a>
+          <a
+            href="/sports_item"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black"
+              >SPORTS ITEMS</span
+            >
+          </a>
+          <a
+            href="/kitchen'"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black">KITCHEN</span>
+          </a>
+          <a
+            href="/tools"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black">TOOLS</span>
+          </a>
+          <a
+            href="/baby_items"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black">BABY ITEMS</span>
+          </a>
+          <a
+            href="jewelery"
+            class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+          >
+            <span class="ml-6 text-sm font-bold text-black">JEWELERY</span>
+          </a>
+        </div>
+      </div>
+
+      <!--link start-->
+      <div class="flex flex-grow items-center justify-between pl-12">
+        <div class="flex items-center space-x-6 capitalize">
+          <a href="/home" class="text-white transition hover:text-white"
+            >Home</a
+          >
+          <a href="/shop" class="text-white transition hover:text-white"
+            >Shop</a
+          >
+          <a
+            href="/order_tracking"
+            class="text-white transition hover:text-white"
+            >Order Tracking</a
+          >
+          <a href="/refund" class="text-white transition hover:text-white"
+            >Exchange/Refund</a
+          >
+          <a href="/information" class="text-white transition hover:text-white"
+            >Information</a
+          >
+        </div>
+        <a href="/login" class="mr-16 text-white">Login/Register</a>
+      </div>
+
+      <!--link end-->
+    </div>
+  </nav>
+  <!-- navbar end-->
+
+    <!--title-->
+
+    <div class="mt-6 h-20 w-72 rounded bg-amit text-center">
+      <p class="pt-6 text-center text-4xl text-white">Why choose us ?</p>
+    </div>
+<div >
+  <p class="ml-24 pt-6 text-black text-1xl"> A2Z.com always accept payment through corporate account or merchant number. Never accept payments through personal account or personal number (except at the customer's request). And this transaction is completely controlled by the bank. The bank never allows anyone to transact without legality.</p>
+  <p class="ml-24 pt-6 text-black text-1xl"> We have corporate offices, outlets and warehouses. Whose address has been given on our website and Facebook page, you can come to our office if you want.</p>
+  <p class="ml-24 pt-6 text-black text-1xl"> Moreover, you can see our website that it is a professional and standard e-commerce website where all the documents of the customer's transactions are stored in his own account.</p>
+</div>
+
+
+
+
+    <!-- <div class="mx-auto my-auto">
+      <p class="text-4xl">Order Number:</p>
+    </div>
+
+   
+    copyright
+    
+        <div class="flex bg-gray-800 py-4 bottom-0">
+      <div class="container flex justify-between text-center">
+        <p class="ml-6 text-center text-white">
+          A2ZWholesale - All Rights reserved
+        </p>
+      </div>
+
+      
+      <div class="mr-16 flex space-x-6">
+        <a href="#" class="text-white">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div> -->
+  </body>
+</html>

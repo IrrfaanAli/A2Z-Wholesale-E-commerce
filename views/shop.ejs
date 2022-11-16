@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>A2ZWholesale</title>
+  </head>
+  <body>
+    <!-- Header Start-->
+    <header class="bg-amit py-4 shadow-sm">
+      <div class="container flex items-center justify-center">
+        <!--logo-->
+        <a href="/home">
+          <img src="/images/asollogo.png" class="ml-6 mr-36 w-20" />
+        </a>
+
+     <!--searchbar-->
+     <form method="get" action="/search">
+      <div class="relative mr-16 flex w-full max-w-xl">
+        <span class="absolute left-2 top-3 text-lg text-gray-400">
+          <i class="fas fa-search"></i>
+        </span>
+        <input
+          type="text"
+          class="w-full rounded-l-md border border-r-0 border-black py-3 pl-12 pr-3 focus:outline-none"
+          placeholder="Search" name="name"
+        />
+        <button class="rounded-r-md border-black bg-black px-8 text-white">
+          Search
+        </button>
+      </div>
+      </form>
+        <!--icons-->
+
+        <div class="flex items-center space-x-8 ml-16 mr-16">
+          <a href="/cart" class="text-center text-gray-700 relative">
+            <div class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+          </a>
+          <a href="/dashboard" class="text-center text-gray-700 relative">
+            <div class="text-2xl">
+              <i class="fa-solid fa-user-large"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header end-->
+
+    <!-- navbar start-->
+
+    <nav class="bg-gray-800">
+      <div class="container flex ml-6">
+        <div
+          class="px-8 py-4 bg-red-500 flex item-center cursor-pointer relative group"
+        >
+          <span class="text-white">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="capitalize ml-2 text-white">All Categories</span>
+
+          <div
+            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-red-500 divide-dashed hidden group-hover:block"
+          >
+            <a
+              href="/electronics"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">ELECTRONICS</span>
+            </a>
+            <a
+              href="/clothing"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">CLOTHING</span>
+            </a>
+            <a
+              href="/cosmetics"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">COSMETICS</span>
+            </a>
+            <a
+              href="/geroceries"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">GEROCERIES</span>
+            </a>
+            <a
+              href="/sports_item"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold"
+                >SPORTS ITEMS</span
+              >
+            </a>
+            <a
+              href="/kitchen"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">KITCHEN</span>
+            </a>
+            <a
+              href="/tools"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">TOOLS</span>
+            </a>
+            <a
+              href="/baby_items"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">BABY ITEMS</span>
+            </a>
+            <a
+              href="/jewelery"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">JEWELERY</span>
+            </a>
+          </div>
+        </div>
+
+        <!--link start-->
+        <div class="flex flex-grow items-center justify-between pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a href="/home" class="text-white transition hover:text-white"
+              >Home</a
+            >
+            <a href="/shop" class="text-white transition hover:text-white"
+              >Shop</a
+            >
+            <a
+              href="/order_tracking"
+              class="text-white transition hover:text-white"
+              >Order Tracking</a
+            >
+            <a href="/refund" class="text-white transition hover:text-white"
+              >Exchange/Refund</a
+            >
+            <a href="/information" class="text-white transition hover:text-white"
+              >Information</a
+            >
+          </div>
+          <a href="/login" class="mr-16 text-white">Login/Register</a>
+        </div>
+
+        <!--link end-->
+      </div>
+    </nav>
+    <!-- navbar end-->
+
+    <!--sidebar and product start-->
+    <div class="container grid grid-cols-4 gap-6 pt-4 pb-6 items-start">
+      <!--sidebar start-->
+      <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+        <div class="divide-y divide-gray-200 space-y-5 ml-6">
+          <div>
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              filter
+            </h3>
+            <div class="space-y-2">
+              <!--single items-->
+              <form action="/low-high" method="get" id="signup">
+                <input
+                  type="submit"
+                  value="Price low-high"
+                  class="text-gray-600 ml-3 coursor-pointer"
+                />
+              </form>
+              <form action="/high-low" method="get" id="signup">
+                <input
+                  type="submit"
+                  value="Price high-low"
+                  class="text-gray-600 ml-3 coursor-pointer"
+                />
+              </form>
+              <form action="/latest" method="get" id="signup">
+                <input
+                  type="submit"
+                  value="Latest product"
+                  class="text-gray-600 ml-3 coursor-pointer"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="divide-y divide-gray-200 space-y-16 mt-16 ml-6">
+          <div>
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              AVAILABILITY
+            </h3>
+            <div class="space-y-2">
+              <!--single items-->
+
+              <form action="/in_stoke" method="get" id="signup">
+                <input
+                  type="submit"
+                  value="In Stock"
+                  class="text-gray-600 ml-3 coursor-pointer"
+                />
+              </form>
+              <form action="/pre_order" method="get" id="signup">
+                <input
+                  type="submit"
+                  value="Pre Order"
+                  class="text-gray-600 ml-3 coursor-pointer"
+                />
+              </form>
+              <form action="/out_stoke" method="get" id="signup">
+                <input
+                  type="submit"
+                  value="Out Stock"
+                  class="text-gray-600 ml-3 coursor-pointer"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--sidebar end-->
+
+      <!--product part start-->
+      <div class="col-span-3">
+        <!--product part start-->
+        <div class="grid grid-cols-3 gap-6">
+          <% result.forEach(function(item) { %>
+          <div class="rounder overflow-hidden bg-white shadow">
+            <div class="relative">
+              <img src="images/<%=item.image %>" class="ml-6 h-44 w-44" />
+            </div>
+
+            <!--product name-->
+            <div class="px-4 pt-4 pb-3">
+              <a href="#">
+                <h4 class="text-greay-800 mb-2 text-lg font-medium">
+                  <%= item.Product_Name %>
+                </h4>
+              </a>
+              <div class="mb-1 flex items-baseline space-x-2">
+                <p class="text-base text-red-500"><%= item.Price %> TK</p>
+              </div>
+              <div class="flex items-center">
+                <div class="tex-sm flex gap-1 text-yellow-400">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+                <div class="ml-3 text-xs text-gray-500">(2500)</div>
+              </div>
+              <div class="mb-1 flex items-baseline space-x-2">
+                <p class="text-base text-black">(<%= item.Availability %>)</p>
+              </div>
+            </div>
+
+            <form action="/add_to_cart" method="post">
+              <input
+                type="hidden"
+                name="Product_Id"
+                value="<%= item.Product_Id %>"
+              />
+              <input
+                type="hidden"
+                name="Product_Name"
+                value="<%= item.Product_Name %>"
+              />
+              <input type="hidden" name="Price" value="<%= item.Price %>" />
+              <input type="hidden" name="quantity" value="1" />
+              <input type="hidden" name="image" value="<%= item.image %>" />
+              <input
+                type="submit"
+                value="Add to Cart"
+                class="block w-full rounded-b border-red-500 bg-red-500 py-1 text-center text-white"
+              />
+            </form>
+          </div>
+          <% }) %>
+        </div>
+
+        <!--product part end-->
+      </div>
+
+      <!--product part end-->
+    </div>
+
+    <!--sidebar and product end-->
+
+    <!--copyright-->
+    <div class="bg-gray-800 py-4 flex">
+      <div class="container flex text-center justify-between">
+        <p class="text-white text-center ml-6">
+          A2ZWholesale - All Rights reserved
+        </p>
+      </div>
+
+      <!--social media-->
+      <div class="flex space-x-6 mr-16">
+        <a href="#" class="text-white">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

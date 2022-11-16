@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>A2ZWholesale</title>
+  </head>
+
+  <body>
+    <!-- Header Start-->
+    <header class="bg-amit py-4 shadow-sm">
+      <div class="container flex items-center justify-center">
+        <!--logo-->
+        <a href="/home">
+          <img src="/images/asollogo.png" class="ml-6 mr-36 w-20" />
+        </a>
+
+      <!--searchbar-->
+      <form method="get" action="/search">
+        <div class="relative mr-16 flex w-full max-w-xl">
+          <span class="absolute left-2 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full rounded-l-md border border-r-0 border-black py-3 pl-12 pr-3 focus:outline-none"
+            placeholder="Search" name="name"
+          />
+          <button class="rounded-r-md border-black bg-black px-8 text-white">
+            Search
+          </button>
+        </div>
+        </form>
+
+        <!--icons-->
+
+        <div class="ml-16 mr-16 flex items-center space-x-8">
+          <a href="/cart" class="relative text-center text-gray-700">
+            <div class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-[15px] leading-3">Cart</div>
+          </a>
+          <a href="/dashboard" class="relative text-center text-gray-700">
+            <div class="text-2xl">
+              <i class="fa-solid fa-user-large"></i>
+            </div>
+            <div class="text-[15px] leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+  
+      <!-- navbar start-->
+  
+      <nav class="bg-gray-800">
+        <div class="container flex ml-6">
+          <div
+            class="px-8 py-4 bg-red-500 flex item-center cursor-pointer relative group"
+          >
+            <span class="text-white">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span class="capitalize ml-2 text-white">All Categories</span>
+  
+            <div
+              class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-red-500 divide-dashed hidden group-hover:block"
+            >
+              <a
+                href="/electronics"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold">ELECTRONICS</span>
+              </a>
+              <a
+                href="/clothing"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold">CLOTHING</span>
+              </a>
+              <a
+                href="/cosmetics"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold">COSMETICS</span>
+              </a>
+              <a
+                href="/geroceries"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold">GEROCERIES</span>
+              </a>
+              <a
+                href="/sports_item"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold"
+                  >SPORTS ITEMS</span
+                >
+              </a>
+              <a
+                href="/kitchen"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold">KITCHEN</span>
+              </a>
+              <a
+                href="/tools"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold">TOOLS</span>
+              </a>
+              <a
+                href="/baby_items"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold">BABY ITEMS</span>
+              </a>
+              <a
+                href="/jewelery"
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+              >
+                <span class="ml-6 text-black text-sm font-bold">JEWELERY</span>
+              </a>
+            </div>
+          </div>
+  
+          <!--link start-->
+          <div class="flex flex-grow items-center justify-between pl-12">
+            <div class="flex items-center space-x-6 capitalize">
+              <a href="/home" class="text-white transition hover:text-white"
+                >Home</a
+              >
+              <a href="/shop" class="text-white transition hover:text-white"
+                >Shop</a
+              >
+              <a
+                href="/order_tracking"
+                class="text-white transition hover:text-white"
+                >Order Tracking</a
+              >
+              <a href="/refund" class="text-white transition hover:text-white"
+                >Exchange/Refund</a
+              >
+              <a href="/information" class="text-white transition hover:text-white"
+                >Information</a
+              >
+            </div>
+            <a href="/login" class="mr-16 text-white">Login/Register</a>
+          </div>
+  
+          <!--link end-->
+        </div>
+      </nav>
+      <!-- navbar end-->
+
+    <!-- add start-->
+
+    <div class="container pb-16 ml-6 mr-6">
+       <h2 class="tex-gray-800 mb-6 ml-6 mt-6 text-2xl font-medium uppercase">
+        About Us
+      </h2>
+
+      <div class=" ml-6 mb-12">
+
+        <p>
+          A2ZWholesale.com” is the largest wholesale marketplace in Bangladesh that brings the latest local and international goods to your doorstep at a wholesale rate. You can purchase here any product of Alibaba also at the wholesale rate In Bangladeshi currency. We offer a wide selection of products from renowned brands with a promise of a fast, safe, and easy online purchase experience. Wholesalecart.com offers Nationwide free shipping and returns! For your convenience, we have several payment options including credit/debit cards, mobile banking, internet banking, and cash on delivery.
+        </p>
+      </div>
+
+      <div class="mb-12">
+        <h2 class="tex-gray-800 mb-6 ml-6 mt-6 text-2xl font-medium uppercase">
+          WHY A2ZWholesale.COM?
+        </h2>
+      </div>
+        <div class=" ml-6 mb-12">
+        <ol">
+          <li>
+            A convenient online purchase experience.
+          </li>
+          <li>The best retail prices and a vast variety of goods.</li>
+          <li>Most of our products have unique designs.</li>
+          <li>12 Hours, Super Friendly Customer Service via Phone, Live Chat and Facebook.</li>
+          <li>1500+ Positive reviews on Facebook and our website.</li>
+          <li>Multiple ways to make payment including Debit/Credit Card/Bank Transfer/Mobile Banking/Internet Banking & Paypal.</li>
+          <li>Payments in local currencies are accepted through Debit/Credit Card/Bank Transfer/Mobile Banking/Internet Banking & Paypal.</li>
+          <li>Cheapest international charge compared to most other international & national logistic companies.</li>
+          <li>Guaranteed compensation for your purchases that are lost or damaged during our shipping service.</li>
+        </ol>
+      </div>
+
+
+    </div>
+
+  
+
+
+  
+
+    <!--copyright-->
+    <div class="flex bg-gray-800 py-4">
+      <div class="container flex justify-between text-center">
+        <p class="ml-6 text-center text-white">
+          A2ZWholesale - All Rights reserved
+        </p>
+      </div>
+
+      <!--social media-->
+      <div class="mr-16 flex space-x-6">
+        <a href="#" class="text-white">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

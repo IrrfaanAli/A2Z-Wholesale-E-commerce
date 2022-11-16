@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>A2ZWholesale</title>
+  </head>
+  <body>
+    <!-- Header Start-->
+    <header class="bg-amit py-4 shadow-sm">
+      <div class="container flex items-center justify-center">
+        <!--logo-->
+        <a href="/home">
+          <img src="/images/asollogo.png" class="ml-6 mr-36 w-20" />
+        </a>
+
+      <!--searchbar-->
+      <form method="get" action="/search">
+        <div class="relative mr-16 flex w-full max-w-xl">
+          <span class="absolute left-2 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full rounded-l-md border border-r-0 border-black py-3 pl-12 pr-3 focus:outline-none"
+            placeholder="Search" name="name"
+          />
+          <button class="rounded-r-md border-black bg-black px-8 text-white">
+            Search
+          </button>
+        </div>
+        </form>
+
+        <!--icons-->
+
+        <div class="ml-16 mr-16 flex items-center space-x-8">
+          <a href="/cart" class="relative text-center text-gray-700">
+            <div class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-[15px] leading-3">Cart</div>
+          </a>
+          <a href="/dashboard" class="relative text-center text-gray-700">
+            <div class="text-2xl">
+              <i class="fa-solid fa-user-large"></i>
+            </div>
+            <div class="text-[15px] leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- navbar start-->
+
+    <nav class="bg-gray-800">
+      <div class="container flex ml-6">
+        <div
+          class="px-8 py-4 bg-red-500 flex item-center cursor-pointer relative group"
+        >
+          <span class="text-white">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="capitalize ml-2 text-white">All Categories</span>
+
+          <div
+            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-red-500 divide-dashed hidden group-hover:block"
+          >
+            <a
+              href="/electronics"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">ELECTRONICS</span>
+            </a>
+            <a
+              href="/clothing"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">CLOTHING</span>
+            </a>
+            <a
+              href="/cosmetics"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">COSMETICS</span>
+            </a>
+            <a
+              href="/geroceries"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">GEROCERIES</span>
+            </a>
+            <a
+              href="/sports_item"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold"
+                >SPORTS ITEMS</span
+              >
+            </a>
+            <a
+              href="/kitchen"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">KITCHEN</span>
+            </a>
+            <a
+              href="/tools"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">TOOLS</span>
+            </a>
+            <a
+              href="/baby_items"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">BABY ITEMS</span>
+            </a>
+            <a
+              href="/jewelery"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span class="ml-6 text-black text-sm font-bold">JEWELERY</span>
+            </a>
+          </div>
+        </div>
+
+        <!--link start-->
+        <div class="flex flex-grow items-center justify-between pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a href="/home" class="text-white transition hover:text-white"
+              >Home</a
+            >
+            <a href="/shop" class="text-white transition hover:text-white"
+              >Shop</a
+            >
+            <a
+              href="/order_tracking"
+              class="text-white transition hover:text-white"
+              >Order Tracking</a
+            >
+            <a href="/refund" class="text-white transition hover:text-white"
+              >Exchange/Refund</a
+            >
+            <a href="/information" class="text-white transition hover:text-white"
+              >Information</a
+            >
+          </div>
+          <a href="/login" class="mr-16 text-white">Login/Register</a>
+        </div>
+
+        <!--link end-->
+      </div>
+    </nav>
+    <!-- navbar end-->
+    <% result.forEach(function(item) { %>
+    <div class="container grid grid-cols-2 gap-6 mt-16">
+      <div>
+        <img src="images/<%=item.image %>" alt="" class="w-ful ml-16" />
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-medium uppercase mb-2 mt-2">
+          <%=item.Product_Name %>
+        </h2>
+        <div class="flex items-center mb-4">
+          <div class="flex gap-1 text-sm text-yellow-400">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+          </div>
+          <div class="text-xs text-gray-500 ml-3">(150 reviews)</div>
+        </div>
+
+        <div class="space-y-2">
+          <p class="text-gray-800 font-semibold space-y-2 text-xl">
+            <span >AVIALBILITY : <%=item.Availability %> </span>
+            
+          </p>
+          <p class="text-gray-800 font-semibold space-y-2 text-xl">
+            <span>CATEGORIE :<%=item.Type %></span>
+          </p>
+          <p class="text-gray-800 font-semibold space-y-2 text-xl">
+            <span>CODE :</span>
+          </p>
+        </div>
+        
+        <div class="flex items-baseline mb-1 space-x-2 mt-6">
+          <p class="text-2xl text-red-500"><%=item.Price %></p>
+
+
+          
+        </div>
+
+        <p class="mt-4 text-gray-600">
+          <%= item.Details %>
+        </p>
+
+        <form action="/add_to_cart" method="post">
+          <input
+            type="hidden"
+            name="Product_Id"
+            value="<%= item.Product_Id %>"
+          />
+          <input
+            type="hidden"
+            name="Product_Name"
+            value="<%= item.Product_Name %>"
+          />
+          <input type="hidden" name="Price" value="<%= item.Price %>" />
+          <input type="hidden" name="quantity" value="1" />
+          <input type="hidden" name="image" value="<%= item.image %>" />
+          <input
+            type="submit"
+            value="Add to Cart"
+            class="block w-64 rounded-b border-red-500 bg-red-500 py-1 text-center text-white mt-7"
+          />
+        </form>
+      </div>
+
+      <div class="container pb-16 mt-36 ml-12">
+        <h3 class="border-b border-gray-200 text-gray-800 pb-3 font-medium">
+          PRODUCT DETAILS
+        </h3>
+        <div class="w-3/5 pt-6">
+          <div class="text-gray-600 sapce-y-3">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              tenetur et eius tempore at dignissimos ab, cum facere quod
+              reprehenderit deserunt officia quis, nisi voluptas. Rerum fugiat
+              quo suscipit pariatur a molestiae eligendi quisquam eius itaque
+              totam! Autem voluptatum aperiam voluptatibus in est iste dolores
+              provident quos iusto, illum dolorum quo aspernatur recusandae
+              culpa quaerat, esse sunt architecto deleniti numquam tenetur
+              aliquid sapiente. Enim praesentium hic voluptate temporibus,
+              deserunt dolorem illum incidunt? Id, consectetur nostrum molestias
+              deleniti deserunt modi est animi laboriosam? Temporibus
+              repudiandae aperiam omnis beatae, optio voluptas quaerat ab
+              consectetur consequatur? Molestiae autem in placeat, deserunt quam
+              vel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+    <!--copyright-->
+    <div class="bg-gray-800 py-4 flex">
+      <div class="container flex text-center justify-between">
+        <p class="text-white text-center ml-6">
+          A2ZWholesale - All Rights reserved
+        </p>
+      </div>
+
+      <!--social media-->
+      <div class="flex space-x-6 mr-16">
+        <a href="#" class="text-white">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
